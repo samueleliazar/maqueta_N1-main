@@ -319,4 +319,14 @@ input{
         margin-top: 20px;
     }
 }
+.headersito{
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    min-height: 80vh;
+    padding: 120px 0 ;
+}
+
 
