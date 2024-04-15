@@ -330,5 +330,14 @@ input{
     min-height: 80vh;
     padding: 120px 0 ;
 }
-
+@media screen and (max-width : 900px){
+    .header-txt h1{
+        font-size: 14px;
+    }
+    .header-txt p {
+        font-size: 13px;
+    }
+        
+    
+}
 
