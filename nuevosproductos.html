@@ -64,26 +64,26 @@
         </div>
         <div class="container">
             <h1>Administración de Productos</h1>
-            <form action="procesar_producto.php" id ="formulario" method="post" enctype="multipart/form-data">
+            <form action="procesar_producto.php">
                 <div class="form">
                     <div class="grupo">
-                        <label for="nombre">Nombre del Producto:</label>
-                        <input type="text" id="nombre" name="nombre">
+                        <label for="name">Nombre del Producto:</label>
+                        <input type="text" id="idname" name="name">
                     </div>
                     <div class="grupo">
                         <label for="descripcion">Descripción:</label>
-                        <textarea id="descripcion" name="descripcion"></textarea>
+                        <input type ="text" id="iddescripcion" name="descripcion">
                     </div>
                     <div class="grupo">
                         <label for="precio">Precio:</label>
-                        <input type="number" id="precio" name="precio">
+                        <input type="number" id="idprecio" name="precio">
                     </div>
                         <div class="grupo">
                         <label for="imagen">Imagen:</label>
-                        <input type="file" id="imagen" name="imagen" accept="image/*">
+                        <input type="file" id="idimagen" name="imagen" accept="image/*">
                     </div>
 
-                    <input type="submit" value="Subir Producto">
+                    <input type="submit" onclick = 'return enviarformnproductos();' value="Subir Producto">
                     <p class="warnings" id="warnings"></p>
                 </div>     
             </form>
