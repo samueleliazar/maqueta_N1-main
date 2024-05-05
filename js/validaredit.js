@@ -7,7 +7,7 @@ var fecha = document.getElementById("iddate")
 var error = document.getElementById("error")
 error.style.color ='red';
 
-var form = document.getElementById('formulario');
+var form = document.getElementById('formularios');
     form.addEventListener('submit', function(evt){
     evt.preventDefault();
     var mensajesError =[];
@@ -15,5 +15,9 @@ var form = document.getElementById('formulario');
         mensajesError.push('Ingresa tu nombre');
     }
 
+    if(direccion.value === null || nombre.value === ''){
+        mensajesError.push('Ingresa tu correo');
+    }
+
     error.innerHTML = mensajesError.join(', ');
-});
+}); 
