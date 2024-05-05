@@ -64,21 +64,33 @@
         </div>
         <div class="container">
             <h1>Administración de Productos</h1>
-            <form action="procesar_producto.php" method="post" enctype="multipart/form-data">
-                <label for="nombre">Nombre del Producto:</label>
-                <input type="text" id="nombre" name="nombre" required>
-                <label for="descripcion">Descripción:</label>
-                <textarea id="descripcion" name="descripcion" required></textarea>
-                <label for="precio">Precio:</label>
-                <input type="number" id="precio" name="precio" required>
-                <label for="imagen">Imagen:</label>
-                <input type="file" id="imagen" name="imagen" accept="image/*" required>
-                <input type="submit" value="Subir Producto">
+            <form action="procesar_producto.php" id ="formulario" method="post" enctype="multipart/form-data">
+                <div class="form">
+                    <div class="grupo">
+                        <label for="nombre">Nombre del Producto:</label>
+                        <input type="text" id="nombre" name="nombre">
+                    </div>
+                    <div class="grupo">
+                        <label for="descripcion">Descripción:</label>
+                        <textarea id="descripcion" name="descripcion"></textarea>
+                    </div>
+                    <div class="grupo">
+                        <label for="precio">Precio:</label>
+                        <input type="number" id="precio" name="precio">
+                    </div>
+                        <div class="grupo">
+                        <label for="imagen">Imagen:</label>
+                        <input type="file" id="imagen" name="imagen" accept="image/*">
+                    </div>
+
+                    <input type="submit" value="Subir Producto">
+                    <p class="warnings" id="warnings"></p>
+                </div>     
             </form>
-        </div>
-    
-
-
+            <div id = 'error'></div>
+        </div> 
+    </div>    
+    <script src="js/validaredit.js"></script>
 </body>
 
 </html>
