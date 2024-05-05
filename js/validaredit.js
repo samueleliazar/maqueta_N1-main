@@ -7,7 +7,7 @@ var fecha = document.getElementById("iddate")
 var error = document.getElementById("error")
 error.style.color ='red';
 
-var form = document.getElementById('formularios');
+var form = document.getElementById('formulario');
     form.addEventListener('submit', function(evt){
     evt.preventDefault();
     var mensajesError =[];
