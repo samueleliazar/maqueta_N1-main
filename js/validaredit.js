@@ -12,12 +12,12 @@ var form = document.getElementById('formulario');
     evt.preventDefault();
     var mensajesError =[];
     if(nombre.value === null || nombre.value === ''){
-        mensajesError.push('Ingresa tu nombre');
+        mensajesError.push('<p>Ingresa tu nombre </p>');
     }
 
     if(direccion.value === null || nombre.value === ''){
-        mensajesError.push('Ingresa tu correo');
+        mensajesError.push('<p>Ingresa tu direccion</p>');
     }
 
-    error.innerHTML = mensajesError.join(', ');
+    error.innerHTML = mensajesError.join('');
 }); 
