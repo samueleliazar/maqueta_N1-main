@@ -23,30 +23,30 @@
                 </h3>
 
                 <div class="inputBox">
-                    <span>Nombre Completo :</span>
-                    <input type="text" placeholder="Benjamin Contreras" required>
+                    <label for="nombre">Nombre Completo :</label>
+                    <input type="text" id="idname"placeholder="Benjamin Contreras">
                 </div>
                 <div class="inputBox">
-                    <span>Email :</span>
-                    <input type="email" placeholder="benja@gmail.com" required>
+                    <label for="correo" >Email :</label>
+                    <input type="correo" id="idcorreo" placeholder="benja@gmail.com" >
                 </div>
                 <div class="inputBox">
-                    <span>Dirrecion :</span>
-                    <input type="text" placeholder="Calle - Numero " required>
+                    <label for="direccion">Dirrecion :</label>
+                    <input type="text" id="iddireccion" placeholder="Calle - Numero " >
                 </div>
                 <div class="inputBox">
-                    <span>Ciudad :</span>
-                    <input type="text" placeholder="Lota" required>
+                    <label for="ciudad">Ciudad :</label>
+                    <input type="text" id="idciudad" placeholder="Lota" >
                 </div>
 
                 <div class="flex">
                     <div class="inputBox">
-                        <span>Pais :</span>
-                        <input type="text" placeholder="Chile" required>
+                        <label for="pais">Pais :</label>
+                        <input type="text" id="idpais" placeholder="Chile" >
                     </div>
                     <div class="inputBox">
-                        <span>Codigo Postal :</span>
-                        <input type="text" placeholder="4210000" required>
+                        <label for="codigopostal">Codigo Postal :</label>
+                        <input type="text" id="idcodigopostal" placeholder="4210000" >
                     </div>
                 </div>
 
@@ -61,26 +61,25 @@
                     <img src="images/card_img.png" alt="">
                 </div>
                 <div class="inputBox">
-                    <span>Nombre Del Titular :</span>
-                    <input type="text" placeholder="Benjamin Contreras">
+                    <label for ="nombres">Nombre Del Titular :</label>
+                    <input type="text" id="idnombre"placeholder="Benjamin Contreras">
                 </div>
                 <div class="inputBox">
-                    <span>Numeros Frontales :</span>
-                    <input type="number" placeholder="1111-2222-3333-4444">
+                    <label for="numerofrontal">Numeros Frontales :</label>
+                    <input type="number" id="idnfrontal"placeholder="1111-2222-3333-4444">
                 </div>
                 <div class="inputBox">
-                    <span>Mes De Vencimiento :</span>
-                    <input type="text" placeholder="Junio">
+                    <label for ="mesvencimiento">Mes De Vencimiento :</label>
+                    <input type="text" id="idmv" placeholder="Junio">
                 </div>
-
                 <div class="flex">
                     <div class="inputBox">
-                        <span>Año  :</span>
-                        <input type="number" placeholder="2024">
+                        <label for="año">Año  :</label>
+                        <input type="number" id="idaño"placeholder="2024">
                     </div>
                     <div class="inputBox">
-                        <span>CVV :</span>
-                        <input type="text" placeholder="123">
+                        <label for="cvv">CVV :</label>
+                        <input type="text" id="idcvv"placeholder="123">
                     </div>
                 </div>
 
@@ -88,11 +87,13 @@
     
         </div>
 
-        <input type="submit" value="Realizar Pago" class="submit-btn">
+        <input type="submit" onclick = 'return enviarformpago();' value="Pagar">
+        <p class="warnings" id="warnings"></p>
 
     </form>
+    <div id = 'error'></div>
 
 </div>    
-    
+    <script src="js/validaredit.js"></script>
 </body>
 </html>

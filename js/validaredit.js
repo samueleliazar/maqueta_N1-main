@@ -11,8 +11,16 @@ var estado = document.getElementById("idestado")
 var tipopago = document.getElementById("idtipopago")
 var categoria = document.getElementById("idcategoria")
 var contraseña = document.getElementById("idcontraseña")
+var ciudad = document.getElementById("idciudad")
+var pais = document.getElementById("idpais")
+var codigopostal = document.getElementById("idcodigopostal")
+var nombres = document.getElementById("idnombre")
+var numerofrontal = document.getElementById("idnfrontal")
+var mesvencimiento = document.getElementById("idmv")
 var mensaje = document.getElementById("idmensaje")
+var cvv = document.getElementById("idcvv")
 var error = document.getElementById("error")
+var año = document.getElementById("idaño")
 error.style.color ='red';
 
     function enviarformcliente(){
@@ -139,4 +147,45 @@ function enviarformlogin(){
     error.innerHTML = mensajesError.join('');
     return mensajesError.length === 0;
 
+}
+
+function enviarformpago(){
+    console.log('Enviando....')
+
+    var mensajesError =[];
+    if(nombre.value === null || nombre.value === ''){
+    mensajesError.push('<p>Ingrese un nombre completo</p>');
+    }
+    if(email.value === null || email.value === ''){
+    mensajesError.push('<p>Ingresa un correo</p>');
+    }
+    if(direccion.value === null || direccion.value === ''){
+        mensajesError.push('<p>Ingresa tu direccion</p>');
+    }
+    if(ciudad.value === null || ciudad.value === ''){
+        mensajesError.push('<p>Ingresa tu ciudad</p>')
+    }
+    if(pais.value === null || pais.value === ''){
+        mensajesError.push('<p>Ingresa tu pais</p>')
+    }
+    if(codigopostal.value === null || codigopostal.value === ''){
+        mensajesError.push('<p>Ingresa tu codigo postal</p>')
+    }
+    if(nombres.value === null || nombre.value === ''){
+        mensajesError.push('<p>Ingrese el nombre del titular</p>');
+    }
+    if(numerofrontal.value === null || numerofrontal.value === ''){
+        mensajesError.push('<p>Ingrese los numero frontales</p>');
+    }
+    if(mesvencimiento.value === null || mesvencimiento.value === ''){
+        mensajesError.push('<p>Ingrese el mes de vencimiento</p>');
+    }
+    if(año.value === null || año.value === ''){
+        mensajesError.push('<p>Ingrese un año</p>');
+    }
+    if(cvv.value === null || cvv.value === ''){
+        mensajesError.push('<p>Ingrese un cvv</p>');
+    }
+    error.innerHTML = mensajesError.join('');
+    return mensajesError.length === 0;
 }
