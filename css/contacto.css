@@ -5,6 +5,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #1B1726;
 }
 
 form{
@@ -22,18 +23,19 @@ form{
 }
 
 h2{
-    color: #283629;
+    color: #ff5a2c;
     font-size: 35px;
 }
 
 label{
-    color:#283629 ;
+    color:#ff5a2c ;
     font-size: 15px;  
     font-weight: 600;  
     margin-bottom: 15px;
     
     
 }
+
 
 input, textarea{
     padding: 17px 25px;
@@ -58,7 +60,7 @@ input::placeholder, textarea::placeholder{
 }
 
 .form-txt a{
-    color: #76b28e;
+    color: #ff5a2c;
     font-size: 14px;
     font-weight: 600;
     text-decoration: none;
@@ -69,8 +71,8 @@ input::placeholder, textarea::placeholder{
     color #FFFFFF;
     border: 0;
     border-radius: 25px;
-    background-color: #51d94c;
-    box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+    background-color: #ff5a2c;
+    box-shadow: 0 0 20px #ff5a2c;
     cursor: pointer;
 }
 .volver-btn {
@@ -78,18 +80,18 @@ input::placeholder, textarea::placeholder{
     color #FFFFFF;
     border: 0;
     border-radius: 25px;
-    background-color: #51d94c;
-    box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+    background-color: #ff5a2c;
+    box-shadow: 0 0 20px #ff5a2c;
     cursor: pointer;
 }
 
 .btn:hover {
-    background-color: #50E04B;
+    background-color: #ff5a2c;
 
 }
 
 .volver-btn:hover {
-    background-color: #50E04B;
+    background-color: #ff5a2c;
 
 }
 

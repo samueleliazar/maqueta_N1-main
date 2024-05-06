@@ -31,20 +31,23 @@
         <h1>Inicio de sesion</h1>
         <form method="post">
             <div class="username">
-                <input type="text" required >
-                <label>Nombre de usuario</label>
+                <label for="name">Nombre de usuario</label>
+                <input type="text" id="idname" name="name">
             </div>
             <div class="username">
-                <input type="password" required>
                 <label>Contraseña</label>
+                <input type="password" id="idcontraseña" name="contraseña">
             </div>
             <div class="recordar">¿Olvido su contraseña?</div>
-            <input type="submit" value="Iniciar">
+            <input type="submit" onclick = 'return enviarformlogin();' value="iniciar">
+            <p class="warnings" id="warnings"></p>
             <div class="registrarse">
                 Quiero hacer el <a href="#">registro</a>
             </div>
         </form>
+        <div id = 'error'></div>
     </div>
+    <script src="js/validaredit.js"></script>
 
 </body>
 

@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #1B1726;
+}
 *{
     margin: 0;
     padding:0;
     font-family: 'Poppins' , sans-serif;
 }
 header{
-    background: url(images/apple.png);
     background-size: cover;
     background-position:center;
     height: 300px;
@@ -114,6 +118,7 @@ header h1{
     font-weight: bold;
     margin-bottom: 10px;
     text-transform: uppercase;
+    color : #ff5a2c;
 }
 .carrito .carrito-item .selector-cantidad{
     display: inline-block;
@@ -135,20 +140,22 @@ header h1{
     line-height: 32px;
     text-align: center;
     border-radius: 50%;
-    border: 1px solid #000;
+    border: 1px solid #ff5a2c;
     cursor: pointer;
+    color :#ff5a2c;
 }
 .carrito .carrito-item .carrito-item-precio{
     font-weight: bold;
     display: inline-block;
     font-size: 18px;
     margin-bottom: 5px;
+    color : #ff5a2c;
 }
 .carrito .carrito-item .btn-eliminar{
     position: absolute;
     right: 15px;
     top: 15px;
-    color: #000;
+    color: #ff5a2c;
     font-size: 20px;
     width: 40px;
     height: 40px;
