@@ -11,7 +11,7 @@ body{
 
 .form-register{
     width: 400px;
-    background: #1B1726;
+    background: white;
     padding: 30px;
     margin: auto;
     margin-top: 100px;
@@ -37,7 +37,7 @@ body{
     border: 1px solid #ff5a2c;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
-    color: white;
+    color: #ff5a2c;
 }
 
 .form-register p{
@@ -53,7 +53,7 @@ body{
 }
 
 .form-register a:hover{
-    color: white;
+    color: #ff5a2c;
     text-decoration: underline;
 }
 
