@@ -1,3 +1,8 @@
+var nombres = document.getElementById('nombres')
+var apellidos = document.getElementById('apellidos')
+var correo = document.getElementById('correo')
+var clave = document.getElementById('clave')
+var clave2 = document.getElementById('clave2')
 var nombre = document.getElementById("idname")
 var direccion = document.getElementById("iddireccion")
 var telefono = document.getElementById("idtel")
@@ -309,4 +314,50 @@ function enviarformpago(){
     error.innerHTML = mensajesError.join('');
     return mensajesError.length === 0;
     
+}
+
+function validarFormulario() {
+
+    if(nombres == "" || apellidos == "" || correo == "" || clave == "" || clave2 == "") {
+        alert("Todos los campos son obligatorios.");
+        return false;
+    }
+
+    var re = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]{3,}$/;
+    if(!re.test(nombres)) {
+        alert("El nombre no es válido. Debe tener más de 3 caracteres y no contener números ni caracteres especiales.");
+        return false;
+    }
+
+    if(clave != clave2) {
+        alert("Las contraseñas no coinciden.");
+        return false;
+    }
+
+    if(clave.length < 8) {
+        alert("La contraseña debe tener al menos 8 caracteres.");
+        return false;
+    }
+
+    re = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
+    if(!re.test(correo)) {
+        alert("El correo electrónico no es válido.");
+        return false;
+    }
+
+    window.location.href = "login.html";
+    return false; 
+
+}
+
+function validarCorreo(){
+    if(correo.value === null || correo.value === ''){
+        mensajesError.push('<p>Ingresa un correo</p>');
+        } else if (correo.value.length <=2){
+            mensajesError.push('<p> El correo debe tener 3 o más caracteres</p>');
+        } else if(!correo.value.includes("@")||!correo.value.includes(".")){
+            mensajesError.push('<p> El correo debe contener un "@" y un "."</p>')
+        } else if (!/\d/.test(correo.value)){
+            mensajesError.push('<p> El correo debe contener al menos un número</p>');
+        }
 }
